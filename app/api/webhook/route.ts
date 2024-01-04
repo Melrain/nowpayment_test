@@ -63,7 +63,7 @@ export async function POST(req: Request) {
     const mongoUser = await createUser({
       clerkId: id,
       web3Wallet: web3_wallets[0].web3_wallet,
-      amount: 0
+      amount: 100
     });
 
     return NextResponse.json({ message: 'OK', user: mongoUser });
