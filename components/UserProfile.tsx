@@ -14,7 +14,7 @@ const UserProfile = () => {
     <div className="flex flex-col gap-5">
       <UserButton />
       <div>userId:{userId}</div>
-      <div>metamask address:{primaryWeb3Wallet ? primaryWeb3Wallet.web3Wallet : 'Not found'}</div>
+      <div>metamask address!:{primaryWeb3Wallet ? primaryWeb3Wallet.web3Wallet : 'Not found'}</div>
     </div>
   );
 };
