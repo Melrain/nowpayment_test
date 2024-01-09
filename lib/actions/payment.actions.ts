@@ -20,7 +20,7 @@ export const createInvoice = async (params: CreateInvoiceParams) => {
       maxBodyLength: Infinity,
       url: 'https://api.nowpayments.io/v1/invoice',
       headers: {
-        'x-api-key': 'TKMC7DJ-25V4VKK-MQRD2FR-5HTHSBT',
+        'x-api-key': process.env.NOWPAYMENT_API_KEY,
         'Content-Type': 'application/json'
       },
       data
