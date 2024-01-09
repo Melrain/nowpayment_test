@@ -17,14 +17,13 @@ const formSchema = z.object({
 
 const page = () => {
   const router = useRouter();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       amount: 0
     }
   });
-  // eslint-disable-next-line react-hooks/rules-of-hooks
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {

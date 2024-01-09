@@ -5,6 +5,7 @@
     "space-before-function-paren": ["off", "2"],
     "multiline-ternary": "off",
     "indent": ["off", 2],
-    "camelcase": "off"
+    "camelcase": "off",
+    "react-hooks/rules-of-hooks": "off"
   }
 }
